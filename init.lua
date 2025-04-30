@@ -23,4 +23,21 @@ require("lazy").setup({
   }
 })
 
+local Terminal = require("toggleterm.terminal").Terminal
+
+local float_term = Terminal:new({
+  direction = "float",
+  hidden = true,
+})
+
+-- Normal mode mapping
+vim.keymap.set("n", "<C-t>", function()
+  float_term:toggle()
+end, { noremap = true, silent = true })
+
+-- Terminal mode mapping
+vim.keymap.set("t", "<C-t>", function()
+  float_term:toggle()
+end, { noremap = true, silent = true })
+
 
