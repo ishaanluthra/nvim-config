@@ -1,7 +1,7 @@
 require("config.lazy")
 require("config.options")
 
-vim.cmd("colorscheme kanagawa-dragon")
+vim.cmd("colorscheme cyberdream")
 
 vim.opt.number = true
 vim.opt.relativenumber = true
