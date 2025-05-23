@@ -1,7 +1,7 @@
 require("config.lazy")
 require("config.options")
 
-vim.cmd("colorscheme poimandres")
+vim.cmd("colorscheme rose-pine-main")
 vim.opt.number = true
 vim.opt.relativenumber = true
 
